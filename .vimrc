@@ -37,9 +37,13 @@ else
 endif
 
 if has('gui_running')
+    set guioptions-=m " no menu
+    set guioptions-=T " no toolbar
     if has('gui_macvim')
-        set guifont=Ubuntu\ Mono:h13
+        set guifont=Ubuntu\ Mono:h14
     else
+        set guioptions-=L " no scrollbars
+        set guioptions-=r
         set guifont=Consolas\ 9
         set linespace=-3
     endif
@@ -48,9 +52,5 @@ if has('gui_running')
     set columns=85
     "set lines=999
     set number
-    set guioptions-=m " no menu
-    set guioptions-=T " no toolbar
-    set guioptions-=L " no scrollbars
-    set guioptions-=r
     let NERDTreeIgnore=['\~$', '\.pyc$']
 endif
