@@ -1,0 +1,18 @@
+#!/usr/bin/env fish
+
+if test -L ~/.vimrc; 
+   rm ~/.vimrc
+end
+
+ln -s $PWD/.vimrc ~/.vimrc
+
+ln -s $PWD/.vim ~/.vim
+
+if test (uname) = "Darwin"
+    set FONTS_FILE ubuntu-font-family-0.80.zip
+    curl -O "http://font.ubuntu.com/download/$FONTS_FILE"
+    unzip -j -d ~/Library/Fonts $FONTS_FILE "*.ttf"
+    rm $FONTS_FILE
+end
+
+
