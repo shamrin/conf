@@ -40,7 +40,7 @@ if has('gui_running')
     set guioptions-=m " no menu
     set guioptions-=T " no toolbar
     if has('gui_macvim')
-        set guifont=Ubuntu\ Mono:h14
+        set guifont=Ubuntu\ Mono:h13
     else
         set guioptions-=L " no scrollbars
         set guioptions-=r
