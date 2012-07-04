@@ -22,3 +22,4 @@ end
 # ==========
 #
 ln -s $PWD/.gitconfig ~/.gitconfig
+ln -s $PWD/.gitignore ~/.gitignore
