@@ -3,6 +3,10 @@
 "call pathogen#runtime_append_all_bundles()
 "filetype plugin indent on
 
+if $SHELL =~ 'bin/fish'
+    set shell=/bin/sh
+endif
+
 filetype off
 " register bundles (from https://github.com/tpope/vim-pathogen/issues/3)
 let s:bundles = tr(globpath(&runtimepath, 'bundle/*/'), "\n", ',')
