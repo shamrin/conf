@@ -1,0 +1,24 @@
+[ui]
+username = Alexey Shamrin <ashamrin@yandex-team.ru>
+editor = vim
+
+[extensions]
+#hgsubversion = ~/hgsubversion/hgsubversion
+rebase=
+hgext.record=
+color=
+pager=
+mq=
+hgk=
+hgext.extdiff=
+
+[extdiff]
+cmd.meld=
+cmd.vdiff=kdiff3
+cmd.xxdiff = xxdiff
+opts.xxdiff = -r
+
+[pager]
+pager = LESS='FRSX' less
+quiet = True
+attend = diff,status,log,blame,annotate,help

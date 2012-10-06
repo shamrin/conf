@@ -23,3 +23,8 @@ end
 #
 ln -s $PWD/.gitconfig ~/.gitconfig
 ln -s $PWD/.gitignore ~/.gitignore
+
+# hg config
+# ==========
+#
+ln -s $PWD/.hgrc ~/.hgrc
