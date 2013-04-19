@@ -7,6 +7,10 @@ if $SHELL =~ 'bin/fish'
     set shell=/bin/sh
 endif
 
+" disable all netrw mouse handling - very buggy for me under Mac: e.g. drag
+" window border stops working after opening netrw.
+let g:netrw_mousemaps= 0
+
 filetype off
 " register bundles (from https://github.com/tpope/vim-pathogen/issues/3)
 let s:bundles = tr(globpath(&runtimepath, 'bundle/*/'), "\n", ',')
