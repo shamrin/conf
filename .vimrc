@@ -11,6 +11,10 @@ endif
 " window border stops working after opening netrw.
 let g:netrw_mousemaps= 0
 
+" e.g., used by NERDCommenter
+let mapleader=","
+
+
 filetype off
 " register bundles (from https://github.com/tpope/vim-pathogen/issues/3)
 let s:bundles = tr(globpath(&runtimepath, 'bundle/*/'), "\n", ',')
